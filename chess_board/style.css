@@ -3,10 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    /* min-height: 100vh;
-    min-width: 100vh; */
-}
 .container{
    position: absolute;
    top: 50%;
@@ -16,27 +12,29 @@ body{
    height: 300px;
    border: 1px solid blue;
    display: flex;
-   margin-top: 0px;
-   margin-bottom: 1005px;
 }
-.chess{
-    width: 35px;
-    height: 35px;
-    
-}
-.black .chess:nth-of-type(odd){
+#board {
+    display: flex;
+    margin: 0 auto;
+    width: 800px;
+    flex-wrap: wrap;
+    border-radius: 10px;
+  }
+  .square {
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
     border: 1px solid white;
-    background: black;
-}
-.black .chess:nth-of-type(even){
-    border: 1px solid white;
+  }
+#board .red .square:nth-of-type(even){
     background: red;
 }
-.red .chess:nth-of-type(even){
-    border: 1px solid white;
+#board .red .square:nth-of-type(odd){
     background: black;
 }
-.red .chess:nth-of-type(odd){
-    border: 1px solid white;
+#board .black .square:nth-of-type(even){
+    background: black;
+}
+#board .black .square:nth-of-type(odd){
     background: red;
 }
