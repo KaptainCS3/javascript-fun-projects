@@ -9,6 +9,6 @@ setInterval(() =>{
     }
     if(num == mistryNum){
         alert(`Congrats You Guess Correctly`);
-        confirm(`You guessed wrongly${0x1f354} ${i} times`);
+        confirm(`You guessed wrongly ${i} times`);
     }
 },)
