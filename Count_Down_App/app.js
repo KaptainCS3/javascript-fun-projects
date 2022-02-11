@@ -1,5 +1,5 @@
 let counter = 30;
-setInterval(function(){
+setInterval(() =>{
     counter --;
     if(counter >= 0){
         id = document.getElementById('count');
