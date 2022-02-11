@@ -1,4 +1,4 @@
-let guestNum = prompt("Guest the number");
+let guestNum = prompt("Guest a the number from 1 to 10:");
 let mistryNum = Math.floor(Math.random () * 10) + 1;
     if(guestNum == mistryNum)
 alert(`You guest correctly!! mistryNum is ${mistryNum}`);
